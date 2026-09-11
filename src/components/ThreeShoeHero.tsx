@@ -16,12 +16,12 @@ export function ThreeShoeHero() {
     if (!mount || !section) return;
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('#ffffff');
+    scene.background = null;
 
     const camera = new THREE.PerspectiveCamera(34, mount.clientWidth / mount.clientHeight, 0.1, 100);
     camera.position.set(0, 0, 6.4);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(mount.clientWidth, mount.clientHeight);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -112,9 +112,17 @@ export function ThreeShoeHero() {
     <section
       ref={sectionRef}
       aria-label="Axecure sneaker animation"
-      className="relative h-[220vh] bg-ivory-mist"
+      className="relative h-[220vh] bg-white"
     >
-      <div ref={mountRef} className="sticky top-[72px] h-[calc(100vh-72px)] w-full overflow-hidden bg-white" />
+      <div className="sticky top-[72px] h-[calc(100vh-72px)] w-full overflow-hidden bg-white">
+        <img
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          src="/hero background image.png"
+        />
+        <div ref={mountRef} className="absolute inset-0" />
+      </div>
     </section>
   );
 }
