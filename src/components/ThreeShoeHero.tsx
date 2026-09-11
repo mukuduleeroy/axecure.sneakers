@@ -114,7 +114,7 @@ export function ThreeShoeHero() {
       aria-label="Axecure sneaker animation"
       className="relative h-[220vh] bg-white"
     >
-      <div className="sticky top-[61px] h-[calc(100vh-61px)] w-full overflow-hidden bg-white">
+      <div className="sticky top-[40px] h-[calc(100vh-40px)] w-full overflow-hidden bg-white">
         <img
           alt=""
           aria-hidden="true"

@@ -60,13 +60,14 @@ button {
 
 .brand-wordmark {
   display: block;
-  height: 38px;
-  overflow: hidden;
-  width: clamp(132px, 24vw, 210px);
+  height: 13px;
+  overflow: visible;
+  width: clamp(52px, 9vw, 78px);
 }
 
 .brand-wordmark img {
   display: block;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   width: 100%;
 }

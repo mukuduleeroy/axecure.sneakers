@@ -13,8 +13,8 @@ export function Navigation({ onSearchFocus }: NavigationProps) {
 
   return (
     <header className="sticky top-0 z-30 border-b border-ink-black bg-ivory-mist">
-      <nav className="mx-auto flex max-w-page items-center justify-between gap-10 px-15 py-10 text-caption uppercase md:px-30">
-        <a className="flex items-center gap-10 font-bold" href="#top">
+      <nav className="mx-auto flex max-w-page items-center justify-between gap-10 px-15 py-6 text-caption uppercase md:px-30">
+        <a className="flex items-center gap-6 font-bold" href="#top">
           <BrandMark compact />
           <BrandWordmark />
         </a>
