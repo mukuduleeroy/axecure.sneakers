@@ -1,0 +1,148 @@
+import type { Product } from '../types';
+
+export const products: Product[] = [
+  {
+    id: 'axc-beeline',
+    name: 'AXC Beeline',
+    brand: 'Axecure',
+    category: 'Running',
+    price: 129.99,
+    sizes: ['EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Beeline.jpg',
+    ],
+  },
+  {
+    id: 'axc-dior',
+    name: 'AXC Dior',
+    brand: 'Dior',
+    category: 'Lifestyle',
+    price: 149.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Dior.jpg',
+    ],
+  },
+  {
+    id: 'axc-jordan',
+    name: 'AXC Jordan',
+    brand: 'Jordan',
+    category: 'Basketball',
+    price: 139.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44', 'EU 45'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/jordan_n.jpg',
+    ],
+  },
+  {
+    id: 'axc-formal-one',
+    name: 'AXC Formal-One',
+    brand: 'Axecure',
+    category: 'Lifestyle',
+    price: 159.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/formal1.jpg',
+    ],
+  },
+  {
+    id: 'axc-mocassins',
+    name: 'AXC Mocassins',
+    brand: 'Axecure',
+    category: 'Lifestyle',
+    price: 119.99,
+    sizes: ['EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/formal2.jpg',
+    ],
+  },
+  {
+    id: 'axc-nike',
+    name: 'AXC Nike',
+    brand: 'Nike',
+    category: 'Running',
+    price: 129.99,
+    sizes: ['EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Nike.jpg',
+    ],
+  },
+  {
+    id: 'axc-nike-air-force-1',
+    name: 'AXC Nike Air Force 1',
+    brand: 'Nike',
+    category: 'Retro',
+    price: 139.99,
+    sizes: ['EU 38', 'EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Nike%20Air%20Force%201.jpg',
+    ],
+  },
+  {
+    id: 'axc-vuitton',
+    name: 'AXC Vuitton',
+    brand: 'Vuitton',
+    category: 'Lifestyle',
+    price: 149.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Vuitton.jpg',
+    ],
+  },
+  {
+    id: 'axc-new-balance',
+    name: 'AXC New Balance',
+    brand: 'New Balance',
+    category: 'Running',
+    price: 159.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44', 'EU 45'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/New%20Balance.jpg',
+    ],
+  },
+  {
+    id: 'axc-10-adidas',
+    name: 'AXC-10 Adidas',
+    brand: 'Adidas',
+    category: 'Running',
+    price: 69.99,
+    sizes: ['EU 38', 'EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Addidas1.jpg',
+    ],
+  },
+  {
+    id: 'axc-12-nike-air-max',
+    name: 'AXC-12 Nike Air Max',
+    brand: 'Nike',
+    category: 'Running',
+    price: 169.99,
+    sizes: ['EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44', 'EU 45'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Air.jpg',
+    ],
+  },
+  {
+    id: 'axc-13-vans',
+    name: 'AXC-13 Vans',
+    brand: 'Vans',
+    category: 'Lifestyle',
+    price: 79.99,
+    sizes: ['EU 38', 'EU 39', 'EU 40', 'EU 41', 'EU 42', 'EU 43', 'EU 44'],
+    stock: 10,
+    images: [
+      'https://blessing-d3velop.github.io/Axecure-Sneakers/Images%20%26%20Icons/Images/Vans.jpg',
+    ],
+  },
+];
