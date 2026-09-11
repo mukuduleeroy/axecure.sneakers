@@ -1,6 +1,7 @@
 import { ShoppingBag } from 'lucide-react';
 import { useCartStore } from '../store/cartStore';
 import { BrandMark } from './BrandMark';
+import { BrandWordmark } from './BrandWordmark';
 
 type NavigationProps = {
   onSearchFocus: () => void;
@@ -12,13 +13,10 @@ export function Navigation({ onSearchFocus }: NavigationProps) {
 
   return (
     <header className="sticky top-0 z-30 border-b border-ink-black bg-ivory-mist">
-      <div className="brand-rail truncate px-10 text-center text-[10px] uppercase leading-[1.8] text-ivory-mist md:text-caption">
-        Samora Machel Ave, Harare / WhatsApp orders on 0781116954
-      </div>
       <nav className="mx-auto flex max-w-page items-center justify-between gap-10 px-15 py-10 text-caption uppercase md:px-30">
         <a className="flex items-center gap-10 font-bold" href="#top">
           <BrandMark compact />
-          <span className="whitespace-nowrap">Axecure Sneakers</span>
+          <BrandWordmark />
         </a>
         <div className="flex shrink-0 items-center gap-10 md:gap-20">
           <a className="hidden text-link md:inline" href="#shop">

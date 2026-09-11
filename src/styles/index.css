@@ -54,11 +54,19 @@ button {
   text-shadow: 0.04em 0.04em 0 var(--brand-blue);
 }
 
-.brand-mark {
-  background: var(--brand-orange);
-  color: white;
-}
-
 .brand-rail {
   background: linear-gradient(90deg, var(--brand-red) 0 50%, var(--brand-blue) 50% 100%);
+}
+
+.brand-wordmark {
+  display: block;
+  height: 38px;
+  overflow: hidden;
+  width: clamp(132px, 24vw, 210px);
+}
+
+.brand-wordmark img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
