@@ -1,28 +1,26 @@
 import { ShoppingBag } from 'lucide-react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useCartStore } from '../store/cartStore';
 import { BrandMark } from './BrandMark';
 import { BrandWordmark } from './BrandWordmark';
 
-type NavigationProps = {
-  onSearchFocus: () => void;
-};
-
-export function Navigation({ onSearchFocus }: NavigationProps) {
+export function Navigation() {
   const openCart = useCartStore((state) => state.openCart);
   const totalItems = useCartStore((state) => state.totalItems());
+  const navigate = useNavigate();
 
   return (
     <header className="sticky top-0 z-30 border-b border-ink-black bg-ivory-mist">
       <nav className="mx-auto flex max-w-page items-center justify-between gap-10 px-15 py-6 text-caption uppercase md:px-30">
-        <a className="flex items-center gap-6 font-bold" href="#top">
+        <Link className="flex items-center gap-6 font-bold" to="/">
           <BrandMark compact />
           <BrandWordmark />
-        </a>
+        </Link>
         <div className="flex shrink-0 items-center gap-10 md:gap-20">
-          <a className="hidden text-link md:inline" href="#shop">
+          <NavLink className="hidden text-link md:inline" to="/shop">
             Shop
-          </a>
-          <button className="text-link focus-ring hidden bg-transparent uppercase sm:inline" onClick={onSearchFocus} type="button">
+          </NavLink>
+          <button className="text-link focus-ring hidden bg-transparent uppercase sm:inline" onClick={() => navigate('/shop')} type="button">
             Search
           </button>
           <button

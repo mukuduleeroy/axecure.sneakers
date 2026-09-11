@@ -62,6 +62,7 @@ button {
   display: block;
   height: 13px;
   overflow: visible;
+  transform: translateX(-34px);
   width: clamp(52px, 9vw, 78px);
 }
 
